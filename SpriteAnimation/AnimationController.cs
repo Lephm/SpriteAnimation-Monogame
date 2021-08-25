@@ -34,6 +34,7 @@ namespace SpriteAnimation
         }
 
         //Should be call every update to handle animation transition logic
+        //This is where the logic for how user can fill out there logic for transitioning between animation
         public virtual void UpdateAnimation(GameTime gameTime)
         {
             if (currentAnimation != null)
@@ -43,6 +44,7 @@ namespace SpriteAnimation
         }
 
         //It is okay to call this multiple time in an update
+        //Call this where you want to setNewAnimation
         public void SetNewAnimation(Animation newAnimation, bool skip = false)
         {
             if (!skip && isCurrentlyInAnimation)
