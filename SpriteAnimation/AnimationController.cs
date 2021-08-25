@@ -63,7 +63,7 @@ namespace SpriteAnimation
             _currentAnimation = newAnimation.Play();
             if (prevAnimation != newAnimation)
             {
-                OnChangeAnimation();
+                OnChangeAnimation(prevAnimation, newAnimation);
             }
             //Subcribe to new animation event
             _currentAnimation.onStartEvent += this.OnStartAnimation;
@@ -83,7 +83,7 @@ namespace SpriteAnimation
             isCurrentlyInAnimation = false;
         }
 
-        public virtual void OnChangeAnimation()
+        public virtual void OnChangeAnimation(Animation prevAnimation, Animation newAnimation)
         {
             //This set the _currentSprite to the first array in the new animation
             _currentSprite = CurrentAnimation.CurrentSprite;

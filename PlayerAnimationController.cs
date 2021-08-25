@@ -15,6 +15,8 @@ namespace SpriteAnimation
 
         public bool isDead = false;
 
+        public bool _isAttacking = false;
+
         public PlayerAnimationController(Texture2D[] idleSprites, Texture2D[] attackSprites, Texture2D[] walkSprites, Texture2D[] deadSprites)
         {
             idleAnimation = CreateAnimation(idleSprites, 0.25f);
@@ -33,7 +35,7 @@ namespace SpriteAnimation
             }
             if (!isDead)
             {
-                if (keyboardState.IsKeyDown(Keys.Right))
+                if (keyboardState.IsKeyDown(Keys.Right) && !_isAttacking)
                 {
                     SetNewAnimation(walkAnimation, true);
                 }
@@ -41,7 +43,7 @@ namespace SpriteAnimation
                 {
                     SetNewAnimation(idleAnimation);
                 }
-                if (keyboardState.IsKeyDown(Keys.Space))
+                if (keyboardState.IsKeyDown(Keys.Space) && !_isAttacking)
                 {
                     SetNewAnimation(attackAnimation, true);
                 }
@@ -61,8 +63,22 @@ namespace SpriteAnimation
             base.OnEndAnimation();
             if (CurrentAnimation == attackAnimation)
             {
+                _isAttacking = false;
                 SetNewAnimation(idleAnimation);
             }
         }
+
+        public override void OnStartAnimation()
+        {
+            base.OnStartAnimation();
+            if (CurrentAnimation == attackAnimation)
+            {
+                _isAttacking = true;
+            }
+        }
+
+
+
+
     }
 }
