@@ -16,15 +16,13 @@ namespace SpriteAnimation
             }
         }
 
-        private Animation currentAnimation;
-
-
+        private Animation _currentAnimation;
 
         public Animation CurrentAnimation
         {
             get
             {
-                return currentAnimation;
+                return _currentAnimation;
             }
         }
 
@@ -37,9 +35,9 @@ namespace SpriteAnimation
         //This is where the logic for how user can fill out there logic for transitioning between animation
         public virtual void UpdateAnimation(GameTime gameTime)
         {
-            if (currentAnimation != null)
+            if (_currentAnimation != null)
             {
-                currentAnimation.Update(gameTime);
+                _currentAnimation.Update(gameTime);
             }
         }
 
@@ -52,17 +50,17 @@ namespace SpriteAnimation
                 return;
             }
             //Unsubcribe to old animation event
-            if (currentAnimation != null)
+            if (_currentAnimation != null)
             {
-                currentAnimation.onStartEvent -= this.OnStartAnimation;
-                currentAnimation.onEndEvent -= this.OnEndAnimation;
+                _currentAnimation.onStartEvent -= this.OnStartAnimation;
+                _currentAnimation.onEndEvent -= this.OnEndAnimation;
             }
 
-            currentAnimation = newAnimation.Play();
+            _currentAnimation = newAnimation.Play();
             //Subcribe to new animation event
-            currentAnimation.onStartEvent += this.OnStartAnimation;
-            currentAnimation.onEndEvent += this.OnEndAnimation;
-            _currentSprite = currentAnimation.CurrentSprite;
+            _currentAnimation.onStartEvent += this.OnStartAnimation;
+            _currentAnimation.onEndEvent += this.OnEndAnimation;
+            _currentSprite = _currentAnimation.CurrentSprite;
         }
 
         public virtual void OnStartAnimation()
