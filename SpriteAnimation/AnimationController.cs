@@ -32,7 +32,7 @@ namespace SpriteAnimation
         }
 
         //Should be call every update to handle animation transition logic
-        //This is where the logic for how user can fill out there logic for transitioning between animation
+        //This is where the user can fill out the logic for transitioning between animation
         public virtual void UpdateAnimation(GameTime gameTime)
         {
             if (_currentAnimation != null)
