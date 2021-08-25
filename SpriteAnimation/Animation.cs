@@ -28,7 +28,10 @@ namespace SpriteAnimation
             }
         }
 
+
+        //Call every time animation start aka everytime _currentSpriteIndex == 0
         public event AnimationEvent onStartEvent;
+        //Call every time animation end aka everytime _currentSpriteIndex equal max amount
         public event AnimationEvent onEndEvent;
         public Animation(AnimationController animController, Texture2D[] sprites, float speed = 1, bool loop = true)
         {

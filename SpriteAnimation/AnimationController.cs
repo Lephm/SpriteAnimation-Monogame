@@ -5,7 +5,15 @@ namespace SpriteAnimation
 {
     public class AnimationController
     {
-        public bool isCurrentlyInAnimation = false;
+        private bool _isCurrentlyInAnimation = false;
+
+        public bool IsCurrentlyInAnimation
+        {
+            get
+            {
+                return _isCurrentlyInAnimation;
+            }
+        }
         private Texture2D _currentSprite;
 
         public Texture2D CurrentSprite
@@ -46,7 +54,7 @@ namespace SpriteAnimation
         //Call this where you want to setNewAnimation
         public void SetNewAnimation(Animation newAnimation, bool skip = false)
         {
-            if (!skip && isCurrentlyInAnimation)
+            if (!skip && _isCurrentlyInAnimation)
             {
                 return;
             }
@@ -75,12 +83,12 @@ namespace SpriteAnimation
         //Get called everytime the animation is played
         public virtual void OnStartAnimation()
         {
-            isCurrentlyInAnimation = true;
+            _isCurrentlyInAnimation = true;
         }
 
         public virtual void OnEndAnimation()
         {
-            isCurrentlyInAnimation = false;
+            _isCurrentlyInAnimation = false;
         }
 
         public virtual void OnChangeAnimation(Animation prevAnimation, Animation newAnimation)
