@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Attack/HeroKnight_Attack1_0.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Attack/HeroKnight_Attack1_1.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Attack/HeroKnight_Attack1_2.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Attack/HeroKnight_Attack1_3.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Attack/HeroKnight_Attack1_4.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Attack/HeroKnight_Attack1_5.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_1.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_2.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_3.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_4.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_5.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_6.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_7.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_8.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Dead/HeroKnight_Death_9.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Idle/HeroKnight_Idle_0.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Idle/HeroKnight_Idle_1.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Idle/HeroKnight_Idle_2.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Idle/HeroKnight_Idle_3.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Idle/HeroKnight_Idle_4.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Idle/HeroKnight_Idle_5.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Idle/HeroKnight_Idle_6.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Idle/HeroKnight_Idle_7.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_0.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_1.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_2.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_3.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_4.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_5.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_6.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_7.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_8.png</File>
+    <File>C:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_9.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
