@@ -5,7 +5,7 @@ There are currently two cs files that u need to import and use which are both in
 
 Currently for testing the sample, you can clone the repo
 
-cd
+cd SpriteAnimation-Monogame
 
 run dotnet run Program.cs
 
