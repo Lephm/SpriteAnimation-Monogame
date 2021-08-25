@@ -37,8 +37,8 @@ namespace SpriteAnimation
         {
             if (_currentAnimation != null)
             {
-                _currentAnimation.Update(gameTime);
                 _currentSprite = _currentAnimation.CurrentSprite;
+                _currentAnimation.Update(gameTime);
             }
         }
 
