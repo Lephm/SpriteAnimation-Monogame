@@ -17,8 +17,8 @@ namespace SpriteAnimation
 
         public PlayerAnimationController(Texture2D[] idleSprites, Texture2D[] attackSprites, Texture2D[] walkSprites, Texture2D[] deadSprites)
         {
-            idleAnimation = CreateAnimation(idleSprites);
-            attackAnimation = CreateAnimation(attackSprites, 1, false);
+            idleAnimation = CreateAnimation(idleSprites, 0.25f);
+            attackAnimation = CreateAnimation(attackSprites, 0.5f, false);
             walkAnimation = CreateAnimation(walkSprites);
             deadAnimation = CreateAnimation(deadSprites, 1, false);
 
