@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>c:/Users/quan/Desktop/testting/SpriteAnimation/Content/Walk/HeroKnight_Run_8.png</SourceFile>
-  <SourceTime>2020-03-30T05:00:40.1458068+10:00</SourceTime>
-  <DestFile>c:/Users/quan/Desktop/testting/SpriteAnimation/Content/bin/DesktopGL/Content/Walk/HeroKnight_Run_8.xnb</DestFile>
-  <DestTime>2021-08-25T14:19:28.8484977+10:00</DestTime>
+  <SourceFile>c:/Users/quan/Desktop/testting/tesss/SpriteAnimation-Monogame/Content/Walk/HeroKnight_Run_8.png</SourceFile>
+  <SourceTime>2021-08-25T15:13:34.9495861+10:00</SourceTime>
+  <DestFile>c:/Users/quan/Desktop/testting/tesss/SpriteAnimation-Monogame/Content/bin/DesktopGL/Content/Walk/HeroKnight_Run_8.xnb</DestFile>
+  <DestTime>2021-08-25T16:41:05.5979499+10:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-11T02:17:54+10:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

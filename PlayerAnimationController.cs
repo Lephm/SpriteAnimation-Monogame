@@ -35,15 +35,15 @@ namespace SpriteAnimation
             {
                 if (keyboardState.IsKeyDown(Keys.Right))
                 {
-                    SetNewAnimation(walkAnimation);
-                }
-                else if (keyboardState.IsKeyDown(Keys.Space))
-                {
-                    SetNewAnimation(attackAnimation, true);
+                    SetNewAnimation(walkAnimation, true);
                 }
                 else if (keyboardState.IsKeyUp(Keys.Right))
                 {
                     SetNewAnimation(idleAnimation);
+                }
+                if (keyboardState.IsKeyDown(Keys.Space))
+                {
+                    SetNewAnimation(attackAnimation, true);
                 }
 
             }

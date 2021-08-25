@@ -38,6 +38,7 @@ namespace SpriteAnimation
             if (_currentAnimation != null)
             {
                 _currentAnimation.Update(gameTime);
+                _currentSprite = _currentAnimation.CurrentSprite;
             }
         }
 
@@ -49,6 +50,8 @@ namespace SpriteAnimation
             {
                 return;
             }
+
+            Animation prevAnimation = _currentAnimation;
             //Unsubcribe to old animation event
             if (_currentAnimation != null)
             {
@@ -56,13 +59,20 @@ namespace SpriteAnimation
                 _currentAnimation.onEndEvent -= this.OnEndAnimation;
             }
 
+
             _currentAnimation = newAnimation.Play();
+            if (prevAnimation != newAnimation)
+            {
+                OnChangeAnimation();
+            }
             //Subcribe to new animation event
             _currentAnimation.onStartEvent += this.OnStartAnimation;
             _currentAnimation.onEndEvent += this.OnEndAnimation;
-            _currentSprite = _currentAnimation.CurrentSprite;
+
         }
 
+
+        //Get called everytime the animation is played
         public virtual void OnStartAnimation()
         {
             isCurrentlyInAnimation = true;
@@ -71,6 +81,12 @@ namespace SpriteAnimation
         public virtual void OnEndAnimation()
         {
             isCurrentlyInAnimation = false;
+        }
+
+        public virtual void OnChangeAnimation()
+        {
+            //This set the _currentSprite to the first array in the new animation
+            _currentSprite = CurrentAnimation.CurrentSprite;
         }
 
 

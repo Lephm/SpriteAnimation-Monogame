@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\quan\\Desktop\\testting\\SpriteAnimation\\SpriteAnimation.csproj": {}
+    "C:\\Users\\quan\\Desktop\\testting\\tesss\\SpriteAnimation-Monogame\\SpriteAnimation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\quan\\Desktop\\testting\\SpriteAnimation\\SpriteAnimation.csproj": {
+    "C:\\Users\\quan\\Desktop\\testting\\tesss\\SpriteAnimation-Monogame\\SpriteAnimation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quan\\Desktop\\testting\\SpriteAnimation\\SpriteAnimation.csproj",
+        "projectUniqueName": "C:\\Users\\quan\\Desktop\\testting\\tesss\\SpriteAnimation-Monogame\\SpriteAnimation.csproj",
         "projectName": "SpriteAnimation",
-        "projectPath": "C:\\Users\\quan\\Desktop\\testting\\SpriteAnimation\\SpriteAnimation.csproj",
+        "projectPath": "C:\\Users\\quan\\Desktop\\testting\\tesss\\SpriteAnimation-Monogame\\SpriteAnimation.csproj",
         "packagesPath": "C:\\Users\\quan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quan\\Desktop\\testting\\SpriteAnimation\\obj\\",
+        "outputPath": "C:\\Users\\quan\\Desktop\\testting\\tesss\\SpriteAnimation-Monogame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

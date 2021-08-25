@@ -41,12 +41,10 @@ namespace SpriteAnimation
 
         public Animation Play()
         {
-            //Reset animation if the previous animation is not this
             //This is if statement right here is called when the Animation starts to play for the first time
             if (_currentAnimationController.CurrentAnimation != this)
             {
-                HandleStartAnimation();
-                System.Diagnostics.Debug.WriteLine("Start new animation");
+                Initialize();
             }
 
             return this;
@@ -55,6 +53,10 @@ namespace SpriteAnimation
 
         public void Update(GameTime gameTime)
         {
+            if (_currentSpriteIndex == 0)
+            {
+                HandleStartAnimation();
+            }
             float deltatime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             _countdownTillNextSprite -= 1 * _speed;
             if (_countdownTillNextSprite <= 0)
@@ -63,7 +65,7 @@ namespace SpriteAnimation
             }
             _currentSprite = _sprites[_currentSpriteIndex];
         }
-        private void ResetAnimation()
+        private void Initialize()
         {
             _currentSpriteIndex = 0;
             _currentSprite = _sprites[_currentSpriteIndex];
@@ -98,8 +100,6 @@ namespace SpriteAnimation
 
         private void HandleStartAnimation()
         {
-            ResetAnimation();
-
             if (onStartEvent != null)
             {
                 onStartEvent();
